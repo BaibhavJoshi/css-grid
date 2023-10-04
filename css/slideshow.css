@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Open+Sans&display=swap');
 
 *{
@@ -47,53 +46,10 @@ body{
     grid-row:span 2;
     grid-column:span 2;
 }
-=======
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Open+Sans&display=swap');
 
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+@media(max-width:800px){
+    .main-container{
+        grid-template-columns:1fr;
+        grid-auto-flow:row;
+    }
 }
-
-body{
-    background-color:bisque;
-    font-size:30px;
-    width:80%;
-    margin: 1em auto;
-}
-
-.main-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
-    grid-auto-rows:300px;
-    gap:0.3em;
-    grid-auto-flow:dense;
-}
-
-.image-resize{
-    background-color:white;
-}
-
-.image-resize img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    border:2px solid black;
-}
-
-.horizontal{
-    grid-column-start:auto;
-    grid-column-end:span 2;
-}
-
-.vertical{
-    grid-row-start:auto;
-    grid-row-end:span 2;
-}
-
-.both{
-    grid-row:span 2;
-    grid-column:span 2;
-}
->>>>>>> 5aaf90f68400e827afb522ea0ffafaa15631e004
